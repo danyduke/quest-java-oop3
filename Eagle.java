@@ -40,7 +40,7 @@ public class Eagle extends Bird implements Fly {
     @Override
     public int descend(int meters) {
         if (this.flying) {
-            this.altitude = Math.min(this.altitude - meters, 325);
+            this.altitude = Math.min(this.altitude - meters, 1325);
             System.out.printf("%s flies downward, altitude: %d%n", this.getName(), this.altitude);
         }
         return this.altitude;
